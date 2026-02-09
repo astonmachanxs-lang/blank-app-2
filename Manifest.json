@@ -1,0 +1,33 @@
+{
+  "name": "Anime NSFW Generator",
+  "short_name": "AnimeNSFW",
+  "description": "Genera y modifica imágenes de anime adulto ficticio. Prohibido deepfakes o reales.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#ff4081",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Editor de imágenes anime"
+    }
+  ]
+}
