@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Generador Anime NSFW</title>
+  <meta name="description" content="Crea y edita imágenes de anime NSFW de forma ficticia y segura."/>
+  
+  <!-- PWA essentials -->
+  <link rel="manifest" href="/manifest.json"/>
+  <link rel="apple-touch-icon" href="/icons/icon-192.png"/>
+  <meta name="theme-color" content="#000000"/>
+  <meta name="background-color" content="#000000"/>
+  
+  <!-- Evita zoom y mejora experiencia móvil -->
+  <meta name="mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+  
+  <style>
+    body, html { margin:0; padding:0; height:100%; overflow:hidden; background:#000; }
+    iframe { border:none; width:100%; height:100%; }
+  </style>
+</head>
+<body>
+  <iframe id="app-frame" src="https://tu-app.streamlit.app" allowfullscreen></iframe>
+
+  <script>
+    // Registrar service worker (opcional pero recomendado)
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(reg => console.log('Service Worker registrado'))
+          .catch(err => console.log('Error SW:', err));
+      });
+    }
+  </script>
+</body>
+</html>
