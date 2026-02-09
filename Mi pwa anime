@@ -1,0 +1,8 @@
+mi-pwa-anime/
+├── index.html
+├── manifest.json
+├── icons/
+│   ├── icon-192.png
+│   └── icon-512.png
+├── service-worker.js   (opcional para cache básico)
+└── screenshot.png      (opcional, para install prompt rico en Android)
